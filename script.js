@@ -1,4 +1,1 @@
-function showMessage() {
-    document.getElementById("message").innerText = "You clicked the button!";
-  }
-  
+console.log("Welcome to Jamie's website!");

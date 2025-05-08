@@ -2,13 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My GitHub Page</title>
+  <title>Welcome to Jamie's Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="showMessage()">Click Me</button>
-  <p id="message"></p>
+  <header class="hero">
+    <h1>Hi, I'm Jamie!</h1>
+    <p>Physics + Computing + Creativity</p>
+    <div class="hero-buttons">
+      <button onclick="alert('Thanks for clicking!')">Say Hello</button>
+      <a href="#about" class="btn">About Me</a>
+      <a href="#gallery" class="btn">See My Photos</a>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a student with a passion for physics, coding, and designing cool projects.  
+      I love learning, solving problems, and exploring creativity through science and tech.
+    </p>
+    <div class="about-buttons">
+      <button onclick="alert('I love coding!')">I Code</button>
+      <button onclick="alert('Physics is cool!')">I Do Physics</button>
+      <button onclick="alert('Creativity unlocked!')">I Create</button>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="image-grid">
+      <img src="images/photo1.jpg" alt="Gallery photo 1">
+      <img src="images/photo2.jpg" alt="Gallery photo 2">
+      <img src="images/photo3.jpg" alt="Gallery photo 3">
+    </div>
+  </section>
+
+  <footer>
+    <p>Made with ❤️ by Jamie</p>
+    <div class="footer-buttons">
+      <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top</button>
+      <a class="btn" href="mailto:your.email@example.com">Contact Me</a>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
